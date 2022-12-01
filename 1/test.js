@@ -1,11 +1,11 @@
 const input = require("./input.js")
 
-const doIt = (input) => {
-    return input.split(`\n\n`)
+const doIt = (input) => 
+    input.split(`\n\n`)
     .map(group => group.split(`\n`))
     .map(group => group.reduce((acc, cur) => parseInt(acc)+parseInt(cur), 0 ))
     .sort((a, b) => b - a)[0]
-}
+
 
 const testInput = 
 `00001\n00002\n\n00001\n00001\n00001\n00005`
